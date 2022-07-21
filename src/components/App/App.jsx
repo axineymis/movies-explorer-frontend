@@ -17,25 +17,6 @@ function App() {
       <Route exact path='/'>
           <Main loggedIn={loggedIn} />
         </Route>
-        {/* <Route exact path='/'>
-          <Main loggedIn={loggedIn} />
-        </Route>
-        <Route path='/movies'>
-          <Movies loggedIn={loggedIn} />
-        </Route>
-        <Route path='/saved-movies'>
-          <SavedMovies loggedIn={loggedIn} />
-        </Route>
-        <Route path='/profile'>
-          <Profile />
-        </Route>
-        <Route path='/signin' component={Login}></Route>
-        <Route
-          path='/signup'
-          component={Register}
-          buttonText='Зарегистрироваться'
-        ></Route>
-        <Route path='*' component={NotFound}></Route> */}
       </Switch>
     </div>
   );

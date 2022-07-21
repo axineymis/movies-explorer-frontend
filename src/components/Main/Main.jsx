@@ -5,7 +5,7 @@ import AboutMe from '../AboutMe/AboutMe';
 import Techs from '../Techs/Techs';
 import Portfolio from '../Portfolio/Portfolio';
 import Header from '../Header/Header';
-// import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 import './Main.css';
 
 function Main({ loggedIn }) {
@@ -17,7 +17,7 @@ function Main({ loggedIn }) {
       <Techs />
       <AboutMe />
       <Portfolio />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

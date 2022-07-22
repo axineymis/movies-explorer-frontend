@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Main from '../Main/Main';
 // import Movies from '../Movies/Movies';
 // import SavedMovies from '../SavedMovies/SavedMovies';
@@ -13,11 +13,15 @@ function App() {
   const [loggedIn] = useState(true);
   return (
     <div className='page'>
-      <Switch>
-      <Route exact path='/'>
+      <Routes>
+       <Route exact path='/'
+       element={
+        <>
           <Main loggedIn={loggedIn} />
-        </Route>
-      </Switch>
+          </>
+         }
+         />
+      </Routes>
     </div>
   );
 }
